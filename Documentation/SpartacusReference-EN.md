@@ -32,7 +32,7 @@ Spartacus is the whole project. Capua is the virtual environment.
 * Multiple instructions have been added: 
     * **ACTI, DACTI, HIRET, INT, SFSTOR, SIVR**
     * These allow for the minimum required for operating system development
-* Capua now have 8 general purpose registers (GPRs)
+* Capua now have 16 general purpose registers (GPRs)
     * This addition forced a change in machine code. Code assembled and linked
     with previous version of the tool chain will not run properly on Capua V. 2.0.
 * Support for multiple hardware elements was added:
@@ -45,7 +45,7 @@ Capua is a load/store architecture. This means that only load (**MEMR**) and sto
 instructions can do memory access. Stack related instructions also have access to
 memory but in a much stricter way.
 ## Registers
-Capua now have 8 GPRs named from **A** to **G** and then **S**. The **S**
+Capua now have 16 GPRs named from **A** to **H**, **J** to **P**, and then **S**. The **S**
 GPR is intended to be used as a stack register. All registers are 32 bits wide. The
 instruction pointer is named **I** and is not user accessible. A flag register named **FLAGS**
 is used by the core but is also no user accessible. 
